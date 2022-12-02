@@ -1,15 +1,9 @@
-.container {
-  padding: 0 2rem;
+.home_container {
+  @apply px-2;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @apply min-h-screen py-16 flex flex-1 flex-col justify-center items-center
 }
 
 .footer {
@@ -40,9 +34,7 @@
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  @apply text-5xl m-0 py-8 max-md:text-4xl;
 }
 
 .title,

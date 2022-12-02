@@ -1,0 +1,15 @@
+.err_container {
+  @apply container mx-auto;
+}
+
+.err_main {
+  @apply grid h-screen place-items-center;
+}
+
+.err_msg {
+  @apply text-xl text-sky-500 font-semibold;
+}
+
+.err_msg .err_sup_msg {
+  @apply font-extralight text-white border-l-2 border-l-amber-400 pl-2;
+}

@@ -1,0 +1,118 @@
+{
+  "programming": [
+    {
+      "name": "JavaScript",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "TypeScript",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "Java",
+      "image": "",
+      "rank": "4"
+    },
+    {
+      "name": "C#",
+      "image": "",
+      "rank": "3"
+    },
+    {
+      "name": "C/C++",
+      "image": "",
+      "rank": "3"
+    },
+    {
+      "name": "Go",
+      "image": "",
+      "rank": "1"
+    },
+    {
+      "name": "PHP",
+      "image": "",
+      "rank": "0"
+    },
+    {
+      "name": "Assembly",
+      "image": "",
+      "rank": "0"
+    }
+  ],
+  "framework": [
+    {
+      "name": "Next.js",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "React",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "Nest.js",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "Tailwind",
+      "image": "",
+      "rank": "4"
+    },
+    {
+      "name": "Spring",
+      "image": "",
+      "rank": "3"
+    },
+    {
+      "name": "Vue",
+      "image": "",
+      "rank": "2"
+    },
+    {
+      "name": "ASP.NET",
+      "image": "",
+      "rank": "2"
+    },
+    {
+      "name": "Angular",
+      "image": "",
+      "rank": "1"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "Docker",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "MariaDB(MySQL)",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "MS SQL",
+      "image": "",
+      "rank": "5"
+    },
+    {
+      "name": "MongoDB",
+      "image": "",
+      "rank": "5"
+    }
+  ]
+}
