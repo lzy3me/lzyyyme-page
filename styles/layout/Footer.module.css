@@ -1,0 +1,11 @@
+.footer {
+  @apply flex flex-1 py-8 border-t border-t-[#eaeaea] justify-center items-center dark:border-t-[#222];
+}
+
+.footer a {
+  @apply flex justify-center items-center flex-grow-[1];
+}
+
+.logo img {
+  @apply dark:invert;
+}

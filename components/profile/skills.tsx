@@ -2,25 +2,22 @@ import { useCallback, useMemo } from "react";
 
 export default function Skills(props: any) {
   let { skills, type, render, cardStyle, headerStyle } = props;
-  skills = JSON.parse(skills);
 
   const skillRenderer = useCallback((rank: string, name: string) => {
     switch (rank) {
       case "5":
       default:
-        return (
-          <p className="cursor-default text-lg text-gray-50/100">{name}</p>
-        );
+        return <p className="text-lg text-gray-50">{name}</p>
       case "4":
-        return <p className="cursor-default text-lg text-gray-50/80">{name}</p>;
+        return <p className="text-lg text-gray-50/80">{name}</p>;
       case "3":
-        return <p className="cursor-default text-lg text-gray-50/60">{name}</p>;
+        return <p className="text-lg text-gray-50/60">{name}</p>;
       case "2":
-        return <p className="cursor-default text-lg text-gray-50/40">{name}</p>;
+        return <p className="text-lg text-gray-50/40">{name}</p>;
       case "1":
-        return <p className="cursor-default text-lg text-gray-50/20">{name}</p>;
+        return <p className="text-lg text-gray-50/20">{name}</p>;
       case "0":
-        return <p className="cursor-default text-lg text-gray-50/5">{name}</p>;
+        return <p className="text-lg text-gray-50/5">{name}</p>;
     }
   }, []);
 

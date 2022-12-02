@@ -1,0 +1,27 @@
+[
+  {
+    "type": "email",
+    "content": "me@lzyyyme.dev",
+    "remark": "for work"
+  },
+  {
+    "type": "email",
+    "content": "fluke.jessada.s@gmail.com",
+    "remark": ""
+  },
+  {
+    "type": "phone",
+    "content": "+66 86 324 3513",
+    "remark": ""
+  },
+  {
+    "type": "github",
+    "content": "https://github.com/lzy3me",
+    "remark": ""
+  },
+  {
+    "type": "gitlab",
+    "content": "https://gitlab.com/fluke.jessada.s",
+    "remark": "for work"
+  }
+]

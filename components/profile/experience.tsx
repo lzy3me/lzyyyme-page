@@ -3,7 +3,6 @@ import { useCallback } from "react";
 
 export default function Experience(props: any) {
   let { experience } = props;
-  experience = JSON.parse(experience);
 
   const renderer = useCallback(
     (name: string, year: any, position: string) => {

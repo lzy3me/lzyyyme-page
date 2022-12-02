@@ -15,6 +15,10 @@ body {
   @apply max-md:w-full md:max-lg:w-4/5 lg:w-[830px];
 }
 
+.icon-color img {
+  @apply invert;
+}
+
 .logo {
   font-family: 'Caveat', cursive;
   @apply font-bold text-xl;

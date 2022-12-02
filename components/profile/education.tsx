@@ -2,7 +2,6 @@ import { useCallback } from "react";
 
 export default function Education(props: any) {
   let { education } = props;
-  education = JSON.parse(education);
 
   const renderer = useCallback(
     (name: string, year: string, degree: string) => {

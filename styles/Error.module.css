@@ -1,5 +1,5 @@
 .err_container {
-  @apply container mx-auto;
+  @apply mx-2;
 }
 
 .err_main {
