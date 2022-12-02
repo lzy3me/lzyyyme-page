@@ -1,5 +1,6 @@
 import moment from "moment";
 import { useCallback } from "react";
+import styles from "../../styles/Card.module.css";
 
 export default function Experience(props: any) {
   let { experience } = props;
@@ -11,7 +12,7 @@ export default function Experience(props: any) {
       const total = yearEnd.from(yearStart, true);
 
       return (
-        <div className="flex flex-col gap-2 rounded-lg border border-gray-600 p-6 duration-150 hover:shadow-[0_0_24px_rgba(255,255,255,0.3)]">
+        <div className={`flex flex-col gap-2 ${styles._card}`}>
           <div>
             <h1 className="text-2xl max-sm:text-lg font-bold">{name}</h1>
           </div>

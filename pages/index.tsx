@@ -8,6 +8,7 @@ import Experience from "components/profile/experience";
 import { join } from "path";
 import { promises as fs } from "fs";
 import PageLayout from "components/layout/pageLayout";
+import Link from "next/link";
 
 export default function Home(props: any) {
   return (
@@ -20,45 +21,8 @@ export default function Home(props: any) {
 
       <PageLayout>
         <main className={styles.main}>
-          <Profile />
-
-          <h1 className={styles.title}>Experience</h1>
-
-          <Experience experience={props["experience"]} />
-
-          <h1 className={styles.title}>Education</h1>
-
-          <Education education={props["education"]} />
-
-          <h1 className={styles.title}>Skills</h1>
-
-          <div className="responsive grid gap-6 md:grid-cols-2">
-            <Skills
-              headerStyle="border-b-4 border-b-amber-500"
-              skills={props["skills"]}
-              type="programming"
-            />
-            <Skills
-              headerStyle="border-b-4 border-b-amber-500"
-              skills={props["skills"]}
-              type="framework"
-            />
-            <Skills
-              cardStyle="col-span-2"
-              headerStyle="border-b-4 border-b-amber-500"
-              skills={props["skills"]}
-              type="tools"
-              render="row"
-            />
-          </div>
-
-          <h1 className={styles.title}>Hobbies & Interest</h1>
-
-          <p className="responsive text-center">
-            Mainly playing competitive games for stress relief, Storytelling
-            games is also given me joy as well. Hardware programming is also a
-            way for me to think what I want to do with it.
-          </p>
+          <h1 className="logo">LzyyyMe</h1>
+          <Link href={"/me"} className="duration-150 hover:underline hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)]">all about me. click here</Link>
         </main>
       </PageLayout>
     </div>
@@ -66,5 +30,7 @@ export default function Home(props: any) {
 }
 
 export async function getStaticProps() {
-  
+  return {
+    props: {}
+  }
 }

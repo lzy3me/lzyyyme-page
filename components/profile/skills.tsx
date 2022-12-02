@@ -1,4 +1,5 @@
 import { useCallback, useMemo } from "react";
+import styles from "../../styles/Card.module.css";
 
 export default function Skills(props: any) {
   let { skills, type, render, cardStyle, headerStyle } = props;
@@ -7,7 +8,7 @@ export default function Skills(props: any) {
     switch (rank) {
       case "5":
       default:
-        return <p className="text-lg text-gray-50">{name}</p>
+        return <p className="text-lg text-gray-50">{name}</p>;
       case "4":
         return <p className="text-lg text-gray-50/80">{name}</p>;
       case "3":
@@ -25,15 +26,19 @@ export default function Skills(props: any) {
     switch (render) {
       case "col":
       default:
-        return "flex flex-col gap-2 pt-6"
+        return "flex flex-col gap-2 pt-6";
       case "row":
-        return "flex flex-row flex-wrap pt-6 justify-around gap-4"
+        return "flex flex-row flex-wrap pt-6 justify-around gap-4";
     }
   }, [render]);
 
   return (
-    <div className={`flex flex-col rounded-lg border border-gray-600 p-4 text-center duration-150 hover:shadow-[0_0_24px_rgba(255,255,255,0.3)] ${cardStyle}`}>
-      <p className={`text-2xl font-bold uppercase pb-2 ${headerStyle}`}>{type}</p>
+    <div
+      className={`${styles._card} flex flex-col text-center ${cardStyle}`}
+    >
+      <p className={`pb-2 text-2xl font-bold uppercase ${headerStyle}`}>
+        {type}
+      </p>
       <div className={renderType}>
         {skills[type]?.map((data: any) => {
           return skillRenderer(data?.rank, data?.name);

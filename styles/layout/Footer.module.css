@@ -6,6 +6,11 @@
   @apply flex justify-center items-center flex-grow-[1];
 }
 
+.logo {
+  font-family: 'Caveat', cursive;
+  @apply font-bold text-xl;
+}
+
 .logo img {
   @apply dark:invert;
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Profile() {
   return (
-    <div className="responsive flex gap-2 rounded-lg border border-gray-600 p-2 duration-150 hover:shadow-[0_0_24px_rgba(255,255,255,0.3)]">
+    <div className="responsive flex gap-2 rounded-lg border border-gray-600/50 p-2 duration-150 hover:shadow-[0_0_10px_rgba(255,255,255,0.3)]">
       <div>
         <Image src="/images/me.jpg" alt="photo of ME" width={200} height={200} />
       </div>

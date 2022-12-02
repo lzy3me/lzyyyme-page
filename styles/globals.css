@@ -21,7 +21,7 @@ body {
 
 .logo {
   font-family: 'Caveat', cursive;
-  @apply font-bold text-xl;
+  @apply font-bold text-6xl p-6;
 }
 
 a {
