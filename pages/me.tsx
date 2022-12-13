@@ -9,7 +9,13 @@ import styles from "styles/Home.module.css";
 import Contact from "components/profile/contact";
 import PageLayout from "components/layout/pageLayout";
 
-export default function Me({ contact, education, experience, skills, ...props }: Props) {
+export default function Me({
+  contact,
+  education,
+  experience,
+  skills,
+  ...props
+}: Props) {
   return (
     <div className={styles.home_container}>
       <Head>
@@ -20,6 +26,12 @@ export default function Me({ contact, education, experience, skills, ...props }:
       <PageLayout>
         <main className={styles.main}>
           <Profile />
+
+          <h1 className={styles.title}>About me</h1>
+
+          <p className="responsive text-center">
+            
+          </p>
 
           <h1 className={styles.title}>Experience</h1>
 
@@ -70,18 +82,12 @@ export default function Me({ contact, education, experience, skills, ...props }:
 export async function getStaticProps() {
   const jsonDirectory = join(process.cwd(), "public/data");
   let skills = await fs.readFile(jsonDirectory + "/skills.json", "utf8");
-  let education = await fs.readFile(
-    jsonDirectory + "/education.json",
-    "utf8",
-  );
+  let education = await fs.readFile(jsonDirectory + "/education.json", "utf8");
   let experience = await fs.readFile(
     jsonDirectory + "/experience.json",
     "utf8",
   );
-  let contact = await fs.readFile(
-    jsonDirectory + "/contact.json",
-    "utf8",
-  );
+  let contact = await fs.readFile(jsonDirectory + "/contact.json", "utf8");
 
   skills = JSON.parse(skills);
   education = JSON.parse(education);
