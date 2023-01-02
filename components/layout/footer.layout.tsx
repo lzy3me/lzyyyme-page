@@ -9,7 +9,7 @@ export default function Footer({ ...props }) {
         rel="noopener noreferrer"
       >
         Made by&nbsp;
-        <span className={styles.logo}>Lzy3Me</span>
+        <span className={styles.logo}>lzy3me</span>
       </a>
     </footer>
   );
