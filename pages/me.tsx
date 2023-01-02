@@ -27,12 +27,6 @@ export default function Me({
         <main className={styles.main}>
           <Profile />
 
-          <h1 className={styles.title}>About me</h1>
-
-          <p className="responsive text-center">
-            
-          </p>
-
           <h1 className={styles.title}>Experience</h1>
 
           <Experience experience={experience} />
