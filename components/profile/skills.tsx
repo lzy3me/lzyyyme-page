@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useCallback, useMemo } from "react";
 import styles from "../../styles/Card.module.css";
 
@@ -33,7 +34,10 @@ export default function Skills(props: any) {
   }, [render]);
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
       className={`${styles._card} flex flex-col text-center ${cardStyle}`}
     >
       <p className={`pb-2 text-2xl font-bold uppercase ${headerStyle}`}>
@@ -44,6 +48,6 @@ export default function Skills(props: any) {
           return skillRenderer(data?.rank, data?.name);
         })}
       </div>
-    </div>
+    </motion.div>
   );
 }

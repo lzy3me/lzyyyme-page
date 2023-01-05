@@ -14,36 +14,36 @@ module.exports = {
       keyframes: {
         "start": {
           "0%": {
-            opacity: 0,
+            left: "-120%",
           },
           "3%": {
-            opacity: 1,
+            left: 0,
           },
           "50%": {
-            opacity: 1,
+            left: 0,
           },
           "55%": {
-            opacity: 0,
+            left: "-120%",
           },
           "100%": {
-            opacity: 0,
+            left: "-120%",
           },
         },
         "end": {
           "0%": {
-            opacity: 0,
+            left: "30%",
           },
           "50%": {
-            opacity: 0,
+            left: "30%",
           },
-          "53%": {
-            opacity: 1,
+          "55%": {
+            left: "-94%",
           },
-          "95%": {
-            opacity: 1,
+          "97%": {
+            left: "-94%",
           },
           "100%": {
-            opacity: 0,
+            left: "30%",
           },
         },
       },
