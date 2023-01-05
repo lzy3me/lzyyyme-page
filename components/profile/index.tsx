@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import styles from "styles/Home.module.css";
 import Contact from "./contact";
 import Education from "./education";
@@ -25,6 +26,13 @@ export default function AboutMe({
       }}
       className={styles.main}
     >
+      <Link
+        className="absolute top-[20px] duration-150 hover:underline hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)] lg:left-[30px] xl:top-[50px]"
+        href={"/"}
+      >
+        ← Back to LzyyyMe
+      </Link>
+
       <Profile />
 
       <motion.h1
