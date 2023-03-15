@@ -1,0 +1,42 @@
+.main {
+  @apply flex min-h-screen flex-1 flex-col items-center justify-center py-16;
+}
+
+.logo_new_homepage {
+  font-family: Roboto, sans-serif;
+  @apply text-6xl relative;
+}
+
+.logo_new_homepage .logo_top {
+  @apply text-lg absolute top-[-20px];
+}
+
+.logo_new_homepage span.logo_lzy {
+  color: #ffca28;
+}
+
+.logo_new_homepage span.logo_me {
+  color: #1976d2;
+}
+
+.logo_new_homepage span.logo_i_want_a_change_btw_yy_and_3 {
+  color: #42a5f5;
+  text-decoration: none;
+  @apply transition-opacity ease-in-out duration-500;
+}
+
+.navbar_of_change {
+  @apply pt-4;
+}
+
+.navbar_of_change ul {
+  @apply text-gray-700;
+}
+
+.navbar_of_change ul li {
+  @apply pt-2 duration-300;
+}
+
+.navbar_of_change ul li:hover {
+  @apply text-white duration-300 hover:underline hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)];
+}
