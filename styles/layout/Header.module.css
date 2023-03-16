@@ -1,0 +1,53 @@
+.logo_navbar {
+  font-family: Roboto, sans-serif;
+  @apply text-3xl relative pb-4;
+}
+
+.logo_navbar .logo_top {
+  @apply text-lg absolute top-[-20px];
+}
+
+.logo_navbar span.logo_lzy {
+  color: #ffca28;
+}
+
+.logo_navbar span.logo_me {
+  color: #1976d2;
+}
+
+.logo_navbar span.logo_yy_and_3 {
+  color: #42a5f5;
+  text-decoration: none;
+  @apply transition-opacity ease-in-out duration-500;
+}
+
+.logo_navbar .logo_pagename {
+  font-family: 'JetBrains Mono', 'Roboto Mono', monospace;
+  @apply text-lg absolute left-10 top-7;
+}
+
+.navbar_emerge {
+  width: 100%;
+  @apply flex items-center justify-between max-md:pl-3 max-md:pr-3 lg:pl-20 lg:pr-20 pt-5 pb-5;
+}
+
+.navbar_emerge a:hover {
+  width: 100%;
+  @apply text-white duration-300 hover:underline hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)];
+}
+
+.navbar_emerge .logo_side {
+  @apply flex items-center max-md:justify-between max-md:w-screen;
+}
+
+.navbar_emerge .logo_side .goback_home {
+  @apply md:ml-24;
+}
+
+.navbar_emerge ul {
+  @apply flex max-md:hidden;
+}
+
+.navbar_emerge ul > li {
+  @apply pl-10 pl-10;
+}

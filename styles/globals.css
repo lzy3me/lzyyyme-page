@@ -53,3 +53,12 @@ a {
     @apply text-white bg-zinc-900;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    @apply text-black bg-teal-50;
+  }
+}

@@ -1,18 +1,16 @@
+import { Props } from "common/interfaces/page_layout.interface";
 import Head from "next/head";
-import { ReactNode } from "react";
-import styles from "../../styles/layout/Layout.module.css";
+import styles from "styles/layout/Layout.module.css";
 import Footer from "./footer.layout";
-
-interface Props {
-  children?: ReactNode;
-  title?: string;
-  description?: string;
-}
+import Header from "./header.layout";
 
 export default function PageLayout({
   children,
   title = "LzyyyMe",
   description = "Just do it",
+  navbar = false,
+  pagename,
+  page_list,
   ...props
 }: Props) {
   return (
@@ -23,6 +21,7 @@ export default function PageLayout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {navbar ? (<Header pagename={pagename} page_list={page_list} />) : null}
       {children}
       <Footer />
     </div>

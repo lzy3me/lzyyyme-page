@@ -18,7 +18,8 @@
       "styles/*": ["./styles/*"],
       "app/*": ["./app/*"],
       "components/*": ["./components/*"],
-      "features/*": ["./features/*"]
+      "features/*": ["./features/*"],
+      "common/*": ["./common/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
