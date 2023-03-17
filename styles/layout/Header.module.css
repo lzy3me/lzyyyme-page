@@ -28,7 +28,7 @@
 
 .navbar_emerge {
   width: 100%;
-  @apply flex items-center justify-between max-md:pl-3 max-md:pr-3 lg:pl-20 lg:pr-20 pt-5 pb-5;
+  @apply flex items-center justify-between max-md:px-3 lg:px-20 py-5;
 }
 
 .navbar_emerge a:hover {
