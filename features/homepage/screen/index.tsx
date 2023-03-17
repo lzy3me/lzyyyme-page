@@ -6,12 +6,23 @@ import { useRouter } from "next/router";
 export default function index() {
   const { route } = useRouter();
 
+  const homepage_animated = {
+    list_menu: (custom: number) => ({
+      opacity: 1,
+      transition: { delay: custom * 0.3 }
+    }),
+    exit_menu: (custom: number) => ({
+      opacity: 0,
+      transition: { delay: custom * 0.2 }
+    })
+  };
+
   return (
     <motion.div
+      custom={0}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0.1 }}
-      transition={{ delay: 0.3 }}
+      animate="list_menu"
+      variants={homepage_animated}
       className={styles.main}
     >
       <h1 className={styles.logo_new_homepage}>
@@ -29,23 +40,29 @@ export default function index() {
       <div className={styles.navbar_of_change}>
         <ul>
           <motion.li
-            initial={{ scale: 1, opacity: 1 }}
-            exit={route.includes("me") ? { scale: 10, opacity: 0.1 } : {}}
-            transition={{ delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            custom={1}
+            animate="list_menu"
+            exit="exit_menu"
+            variants={homepage_animated}
           >
             <Link href={"/me"}>just want to know me</Link>
           </motion.li>
           <motion.li
-            initial={{ scale: 1, opacity: 1 }}
-            exit={route.includes("blog") ? { scale: 10, opacity: 0.1 } : {}}
-            transition={{ delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            custom={2}
+            animate="list_menu"
+            exit="exit_menu"
+            variants={homepage_animated}
           >
             <Link href={"/blog"}>“my personal opinion”</Link>
           </motion.li>
           <motion.li
-            initial={{ scale: 1, opacity: 1 }}
-            exit={route.includes("projects") ? { scale: 10, opacity: 0.1 } : {}}
-            transition={{ delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            custom={3}
+            animate="list_menu"
+            exit="exit_menu"
+            variants={homepage_animated}
           >
             <Link href={"/projects"}>projects</Link>
           </motion.li>

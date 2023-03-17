@@ -13,7 +13,6 @@ export default function Header({ pagename, page_list, ...props }: Props) {
       },
     }),
   };
-  console.log(page_list?.length);
 
   return (
     <motion.nav exit={{ opacity: 0 }} className={styles.navbar_emerge}>
