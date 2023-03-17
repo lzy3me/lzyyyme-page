@@ -32,7 +32,6 @@
 }
 
 .navbar_emerge a:hover {
-  width: 100%;
   @apply text-white duration-300 hover:underline hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)];
 }
 
