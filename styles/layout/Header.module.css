@@ -31,10 +31,6 @@
   @apply flex items-center justify-between max-md:px-3 lg:px-20 py-5;
 }
 
-.navbar_emerge a:hover {
-  @apply text-white duration-300 hover:underline hover:drop-shadow-[0_0_20px_rgba(255,255,255,1)];
-}
-
 .navbar_emerge .logo_side {
   @apply flex items-center max-md:justify-between max-md:w-screen;
 }
@@ -48,5 +44,5 @@
 }
 
 .navbar_emerge ul > li {
-  @apply pl-10 pl-10;
+  @apply pl-10;
 }

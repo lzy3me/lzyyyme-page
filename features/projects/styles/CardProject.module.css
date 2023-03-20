@@ -1,0 +1,40 @@
+.carded {
+  @apply max-w-[20vw] flex flex-col gap-1 relative;
+}
+
+.carded h1 {
+  @apply text-xl text-justify break-all;
+}
+
+.project_pic {
+  position: relative !important;
+  @apply rounded;
+}
+
+.framework_and_language {
+  @apply flex gap-2;
+}
+
+.framework_and_language .language {
+  @apply flex gap-1 border-l border-l-[#eaeaea] pl-2;
+}
+
+.language .block_language {
+  @apply border rounded py-1 px-2;
+}
+
+.carded .card_description {
+  @apply text-base font-light text-justify;
+}
+
+.carded .card_sources {
+  @apply absolute bottom-0 opacity-0 duration-300;
+}
+
+.carded .card_sources > a {
+  @apply mx-1;
+}
+
+.carded:hover .card_sources {
+  @apply bottom-[-1.5rem] opacity-100;
+}

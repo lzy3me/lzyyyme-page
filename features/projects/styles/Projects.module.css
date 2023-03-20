@@ -1,0 +1,7 @@
+.projects_home {
+  @apply min-h-[75vh];
+}
+
+.projects_display {
+  @apply grid;
+}
